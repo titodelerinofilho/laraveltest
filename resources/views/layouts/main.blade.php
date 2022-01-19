@@ -25,16 +25,24 @@
                     <img src="/img/logo.png" alt="DTS">
                 </a>
                 <ul class="navbar-nav">
-                    <li class="nav-item">Eventos</li>
+                    <a href="/" class="nav-link">
+                        <li class="nav-item">Eventos</li>
+                    </a>
                 </ul>
                 <ul class="navbar-nav">
-                    <li class="nav-item">Criar Eventos</li>
+                    <a href="" class="nav-link">
+                        <li class="nav-item">Criar Eventos</li>
+                    </a>
                 </ul>
                 <ul class="navbar-nav">
-                    <li class="nav-item">Entrar</li>
+                    <a href="/" class="nav-link">
+                        <li class="nav-item">Entrar</li>
+                    </a>
                 </ul>
                 <ul class="navbar-nav">
-                    <li class="nav-item">Cadastrar</li>
+                    <a href="/" class="nav-link">
+                        <li class="nav-item">Cadastrar</li>
+                    </a>
                 </ul>
             </div>
         </nav>
