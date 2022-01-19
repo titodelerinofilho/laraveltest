@@ -30,7 +30,7 @@
                     </a>
                 </ul>
                 <ul class="navbar-nav">
-                    <a href="" class="nav-link">
+                    <a href="/events/create" class="nav-link">
                         <li class="nav-item">Criar Eventos</li>
                     </a>
                 </ul>
@@ -51,6 +51,8 @@
 <footer>
     <p>Tito - Copyright&reg; 2022</p>
 </footer>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
