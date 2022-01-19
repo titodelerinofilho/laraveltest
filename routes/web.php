@@ -37,7 +37,6 @@ Route::get('/contato', function () {
 });
 
 Route::get('/product', function () {
-
     $busca = request('search');
     return view('product', ['busca' => $busca]);
 });
