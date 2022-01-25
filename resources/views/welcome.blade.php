@@ -4,19 +4,28 @@
 
 @section('content')
 
-    <h1>Aprendendo Laravel</h1>
-    <p>{{ $nome }}</p>
-    @if($nome == 'Tito')
-        <p>O nome está correto!</p>
-    @else
-        <p>O nome está errado<br> O nome é {{ $nome }} a sua idade é {{ $idade }} e a profissão é {{ $profissao }}</p>
-    @endif
-    @for($i = 0; $i < count($arr); $i++) 
-        <p>{{ $arr[$i] }} - Pos: {{ $i }}</p>
-    @endfor
-    @foreach($carros as $carro)
-        <p>{{ $loop->index }}</p>
-        <p>{{ $carro }}</p>
-    @endforeach
+<div id="search-container" class="col-md-12">
+    <h1>Busque um evento</h1>
+    <form action="">
+        <input type="text" id="search" name="search" class="form-control" placeholder="Procurar...">
+    </form>
+</div>
+<div id="events-container" class="col-md-12">
+    <h2>Próximos Eventos</h2>
+    <p class="subtitle">Veja os eventos dos próximos dias!</p>
+    <div id="cards-container" class="row">
+        @foreach ($events as $event)
+        <div class="card col-md-3">
+            <img src="/img/eventos.jpeg" alt="{{$event->title}}">
+            <div class="card-body">
+                <div class="card-date">25/01/2022</div>
+                <h5 class="card-title">{{$event->title}}</h5>
+                <p class="card-participants">X Participantes</p>
+                <a href="#" class="btn btn-primary">Saber mais</a>
+            </div>
+        </div> 
+        @endforeach
+    </div>
+</div>
 
 @endsection
