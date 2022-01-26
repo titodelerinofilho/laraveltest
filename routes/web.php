@@ -20,3 +20,5 @@ Route::get('/', [EventController::class, 'index']);
 Route::get('/events/create', [EventController::class, 'create']);
 Route::get('/cadastro/novo', [EventController::class, 'cadastro']);
 Route::get('/login', [EventController::class, 'login']);
+
+Route::post('/events', [EventController::class, 'store']);

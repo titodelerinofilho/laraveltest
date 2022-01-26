@@ -115,3 +115,19 @@ footer {
 footer p {
     margin: 0;
 }
+/* Event Create Page*/
+#event-create-container {
+    padding: 30px;
+}
+#event-create-container label {
+    padding: 5px;
+    font-weight: bold;
+}
+.form-group {
+    padding: 5px;
+}
+#event-create-container input,
+#event-create-container select,
+#event-create-container textarea {
+    font-size: 12px;
+}
