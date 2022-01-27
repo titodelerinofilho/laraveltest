@@ -14,6 +14,12 @@
                 <p class="event-partipants"><ion-icon name="people-outline"></ion-icon>X Partipantes</p>
                 <p class="event-owner"><ion-icon name="star-outline"></ion-icon>Dono do Evento</p>
                 <a href="#" class="btn btn-primary">Marcar Presença</a>
+                <h3>Esse evento com: </h3>
+                    <ul id="items-list">
+                        @foreach ($event->items as $item)
+                        <li><ion-icon name="play-outline"></ion-icon><span>{{ $item }}</span></li>
+                        @endforeach
+                    </ul>
             </div>
         </div>
     </div>

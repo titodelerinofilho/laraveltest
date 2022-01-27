@@ -32,6 +32,18 @@
             <textarea name="description" id="description" class="form-control" placeholder="Informe os detalhes do evento."></textarea>
         </div>
         <div class="form-group">
+            <label for="items">Adicionar itens de infraestrutura:</label>
+            <div class="form-group">
+                <input type="checkbox" name="items[]" value="Cadeiras"> Cadeiras
+            </div>
+            <div class="form-group">
+                <input type="checkbox" name="items[]" value="Palco"> Palco
+            </div>
+            <div class="form-group">
+                <input type="checkbox" name="items[]" value="Coffee Break"> Coffee Break
+            </div>
+        </div>
+        <div class="form-group">
             <input type="submit" class="btn btn-primary" value="Criar Evento">
         </div>
     </form>
