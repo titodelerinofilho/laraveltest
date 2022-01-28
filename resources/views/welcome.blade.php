@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'Home - Tito Laravel')
+@section('title', 'Dashboard - Tito Laravel')
 
 @section('content')
 

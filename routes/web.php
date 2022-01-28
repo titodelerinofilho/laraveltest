@@ -23,3 +23,6 @@ Route::get('/cadastro/novo', [EventController::class, 'cadastro']);
 Route::get('/login', [EventController::class, 'login']);
 
 Route::post('/events', [EventController::class, 'store']);
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');
