@@ -29,21 +29,38 @@
                         <li class="nav-item">Eventos</li>
                     </a>
                 </ul>
+                @auth
                 <ul class="navbar-nav">
                     <a href="/events/create" class="nav-link">
                         <li class="nav-item">Criar Eventos</li>
                     </a>
                 </ul>
                 <ul class="navbar-nav">
-                    <a href="/" class="nav-link">
+                    <a href="/dashboard" class="nav-link">
+                        <li class="nav-item">Meus Eventos</li>
+                    </a>
+                </ul>
+                <ul class="navbar-nav">
+                    <form method="POST" name="logout" action="{{ route('logout') }}">
+                        @csrf
+                        <a href="javascript:document.logout.submit()" class="nav-link"
+                        onclick="this.preventDefault();
+                        this.closest('form').submit();">Sair</a>
+                    </form>
+                </ul>
+                @endauth
+                @guest
+                <ul class="navbar-nav">
+                    <a href="/login" class="nav-link">
                         <li class="nav-item">Entrar</li>
                     </a>
                 </ul>
                 <ul class="navbar-nav">
-                    <a href="/" class="nav-link">
+                    <a href="/register" class="nav-link">
                         <li class="nav-item">Cadastrar</li>
                     </a>
                 </ul>
+                @endguest
             </div>
         </nav>
     </header>
